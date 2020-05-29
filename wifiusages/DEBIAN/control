@@ -1,0 +1,9 @@
+Package: wifiusages
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-size: 2248
+Maintainer: asifanwar
+Description: Print "Welcome and Thank you" on the screen
