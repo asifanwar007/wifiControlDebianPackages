@@ -1,10 +1,10 @@
 {
   "name": "wificontrolpackage",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Control Your wifi data limit",
-  "main": "wifiusages",
+  "main": "index.js",
   "scripts": {
-    "test": "wifiusages"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "name": "@asifanwar007/wifiusages",
   "publishConfig": {
@@ -19,6 +19,12 @@
   ],
   "author": "Md Asif Anwar <asifanwar0000@outlook.com>",
   "license": "MIT",
+  "devDependencies": {
+    "onchange": "https://github.com/asifanwar007/wifiusages.git#wifiusages.deb"
+  },
+  "dependencies": {
+      "onchange": "https://github.com/asifanwar007/wifiusages.git#wifiusages.deb"
+  },
   "bugs": {
     "url": "https://github.com/asifanwar007/wifiusages/issues"
   },
