@@ -1,1 +1,22 @@
-"publishConfig": { "registry": "https://npm.pkg.github.com/asifanwar007" }
+{
+  "name": "wificontrolpackage",
+  "version": "1.0.0",
+  "description": "Control Your wifi data limit",
+  "main": "index.js",
+  "scripts": {
+    "test": "wificontrol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asifanwar007/wifiControlDebianPackages.git"
+  },
+  "keywords": [
+    "wificontrol"
+  ],
+  "author": "Md Asif Anwar <asifanwar0000@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asifanwar007/wifiControlDebianPackages/issues"
+  },
+  "homepage": "https://github.com/asifanwar007/wifiControlDebianPackages#readme"
+}
