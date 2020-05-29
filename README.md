@@ -6,3 +6,7 @@
   sudo apt install ./wifiusages.deb
 ```
 
+```
+  sudo apt-get remove wifiusages
+```
+
