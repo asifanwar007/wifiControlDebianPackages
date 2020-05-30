@@ -4,7 +4,7 @@
 
 This package is used to limit the data in ubuntu.
 
-#### How to use?
+#### How to install?
 
 1. Install ```vnstat``` package using ```sudo apt-get install vnstat```.
 
@@ -24,4 +24,6 @@ Alternate- Click on the package and then install it using GUI.
 ```
   sudo apt-get remove wifiusages
 ```
+
+[LICENSE](https://github.com/asifanwar007/wifiusages/blob/master/LICENSE.md)
 
