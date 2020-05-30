@@ -4,9 +4,7 @@
 
 This package is used to limit the data in ubuntu.
 
-![CI](https://github.com/asifanwar007/wifiControlDebianPackages/workflows/CI/badge.svg)
-
-How to use?
+#### How to use?
 
 1. Install ```vnstat``` package using ```sudo apt-get install vnstat```.
 
