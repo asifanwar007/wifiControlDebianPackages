@@ -1,6 +1,57 @@
 #!/bin/bash
+################################################################################
+# Help                                                                         #
+################################################################################
+Help()
+{
+   # Display Help
+   echo "Wifiusages helps you to restric data limit and notify"
+   echo
+   echo "Syntax: wifiusages [-g|h|v|V]"
+   echo "options:"
+   echo "	g     Print the GPL license notification."
+   echo "	h     Print this Help."
+   echo "	v     Verbose mode."
+   echo "	V     Print software version and exit."
+   echo
+}
+
+softVersion()
+{
+	echo "1.0.0"
+}
+
+
+################################################################################
+################################################################################
+# Main program                                                                 #
+################################################################################
+################################################################################
+################################################################################
+# Process the input options. Add options as needed.                            #
+################################################################################
+# Get the options
+while getopts ":v:h:v:V" option; do
+   case $option in
+      h) # display Help
+         Help
+         exit;;
+      V) # Software Version
+		 softVersion
+		 exit;;
+	 \?) # incorrect option
+		echo "use -h for help"
+   esac
+done
+exit
+echo "Hello world!"
 echo "Running script"
 declare -i limit=$(zenity --entry --text="Set Limit in Mb" --entry-text="50")
+echo $limit
+if [[ $limit -eq 0 ]]; then
+	#statements
+	exit
+fi
 sleep 1
 usage=1
 before_point_data=$( vnstat | tail -n -2 | cut -c  47-51)
@@ -71,3 +122,5 @@ echo 'Thank You'
 #    done
 
 #echo "data used: $data"
+
+
